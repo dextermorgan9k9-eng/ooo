@@ -1,37 +1,24 @@
-name: Temporary SSH VPS with Tailscale
+name: Run Node Bot Temporarily
 
 on:
   workflow_dispatch:
 
 jobs:
-  ssh-vps:
+  run-bot:
     runs-on: ubuntu-latest
     timeout-minutes: 360  # حوالي 6 ساعات
     steps:
-      - name: Install & Configure SSH
-        run: |
-          sudo apt update -y
-          sudo apt install -y openssh-server curl
-          sudo systemctl enable ssh
-          sudo systemctl start ssh
-          echo "root:admin@123" | sudo chpasswd
-          echo "PermitRootLogin yes" | sudo tee -a /etc/ssh/sshd_config
-          sudo systemctl restart ssh
-          echo "✅ SSH user: root | pass: admin@123"
+      - uses: actions/checkout@v3
 
-      - name: Install Tailscale
-        run: |
-          curl -fsSL https://tailscale.com/install.sh | sh
-          sudo tailscale up --authkey=${{ secrets.TAILSCALE_AUTH_KEY }} --hostname=vps-${{ github.run_id }}
-          tsIP=$(tailscale ip -4 | head -n 1)
-          echo "TAILSCALE_IP=$tsIP" >> $GITHUB_ENV
-          echo "✅ Tailscale IP: $tsIP"
+      - name: Setup Node.js
+        uses: actions/setup-node@v3
+        with:
+          node-version: 20
 
-      - name: Keep VPS Alive
-        run: |
-          echo "SSH ready! Connect using:"
-          echo "ssh root@$TAILSCALE_IP"
-          while true; do
-            echo "[$(date)] VPS running..."
-            sleep 300
-          done
+      - name: Install dependencies
+        run: npm ci
+
+      - name: Run Bot
+        run: node index.js
+        env:
+          TOKEN: ${{ secrets.TOKEN }}
