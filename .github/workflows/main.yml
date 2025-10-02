@@ -1,4 +1,4 @@
-name: Temporary SSH VPS
+name: Temporary SSH VPS with Tailscale
 
 on:
   workflow_dispatch:
@@ -11,7 +11,7 @@ jobs:
       - name: Install & Configure SSH
         run: |
           sudo apt update -y
-          sudo apt install -y openssh-server
+          sudo apt install -y openssh-server curl
           sudo systemctl enable ssh
           sudo systemctl start ssh
           echo "root:admin@123" | sudo chpasswd
@@ -19,8 +19,18 @@ jobs:
           sudo systemctl restart ssh
           echo "✅ SSH user: root | pass: admin@123"
 
+      - name: Install Tailscale
+        run: |
+          curl -fsSL https://tailscale.com/install.sh | sh
+          sudo tailscale up --authkey=${{ secrets.TAILSCALE_AUTH_KEY }} --hostname=vps-${{ github.run_id }}
+          tsIP=$(tailscale ip -4 | head -n 1)
+          echo "TAILSCALE_IP=$tsIP" >> $GITHUB_ENV
+          echo "✅ Tailscale IP: $tsIP"
+
       - name: Keep VPS Alive
         run: |
+          echo "SSH ready! Connect using:"
+          echo "ssh root@$TAILSCALE_IP"
           while true; do
             echo "[$(date)] VPS running..."
             sleep 300
