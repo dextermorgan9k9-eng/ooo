@@ -1,0 +1,219 @@
+[
+  {
+    "_id": "6890de8e20592b0cdcdf2df1",
+    "type": "bedrock",
+    "protocol": 422,
+    "name": "1.16.201",
+    "__v": 0
+  },
+  {
+    "_id": "6890de8e20592b0cdcdf2df2",
+    "type": "bedrock",
+    "protocol": 448,
+    "name": "1.17.10",
+    "__v": 0
+  },
+  {
+    "_id": "6890de8e20592b0cdcdf2df3",
+    "type": "bedrock",
+    "protocol": 475,
+    "name": "1.18.0",
+    "__v": 0
+  },
+  {
+    "_id": "6890de8e20592b0cdcdf2df4",
+    "type": "bedrock",
+    "protocol": 503,
+    "name": "1.18.30",
+    "__v": 0
+  },
+  {
+    "_id": "6890de8e20592b0cdcdf2df5",
+    "type": "bedrock",
+    "protocol": 527,
+    "name": "1.19.1",
+    "__v": 0
+  },
+  {
+    "_id": "6890de8e20592b0cdcdf2df6",
+    "type": "bedrock",
+    "protocol": 544,
+    "name": "1.19.20",
+    "__v": 0
+  },
+  {
+    "_id": "6890de8e20592b0cdcdf2df7",
+    "type": "bedrock",
+    "protocol": 554,
+    "name": "1.19.30",
+    "__v": 0
+  },
+  {
+    "_id": "6890de8e20592b0cdcdf2df8",
+    "type": "bedrock",
+    "protocol": 560,
+    "name": "1.19.50",
+    "__v": 0
+  },
+  {
+    "_id": "6890de8e20592b0cdcdf2df9",
+    "type": "bedrock",
+    "protocol": 568,
+    "name": "1.19.63",
+    "__v": 0
+  },
+  {
+    "_id": "6890de8e20592b0cdcdf2dfa",
+    "type": "bedrock",
+    "protocol": 575,
+    "name": "1.19.70",
+    "__v": 0
+  },
+  {
+    "_id": "6890de8e20592b0cdcdf2dfb",
+    "type": "bedrock",
+    "protocol": 582,
+    "name": "1.19.80",
+    "__v": 0
+  },
+  {
+    "_id": "6890de8e20592b0cdcdf2dfc",
+    "type": "bedrock",
+    "protocol": 589,
+    "name": "1.20.0",
+    "__v": 0
+  },
+  {
+    "_id": "6890de8e20592b0cdcdf2dfd",
+    "type": "bedrock",
+    "protocol": 594,
+    "name": "1.20.10",
+    "__v": 0
+  },
+  {
+    "_id": "6890de8e20592b0cdcdf2dfe",
+    "type": "bedrock",
+    "protocol": 618,
+    "name": "1.20.30",
+    "__v": 0
+  },
+  {
+    "_id": "6890de8e20592b0cdcdf2dff",
+    "type": "bedrock",
+    "protocol": 622,
+    "name": "1.20.40",
+    "__v": 0
+  },
+  {
+    "_id": "6890de8e20592b0cdcdf2e00",
+    "type": "bedrock",
+    "protocol": 630,
+    "name": "1.20.50",
+    "__v": 0
+  },
+  {
+    "_id": "6890de8e20592b0cdcdf2e01",
+    "type": "bedrock",
+    "protocol": 649,
+    "name": "1.20.61",
+    "__v": 0
+  },
+  {
+    "_id": "6890de8e20592b0cdcdf2e02",
+    "type": "bedrock",
+    "protocol": 662,
+    "name": "1.20.71",
+    "__v": 0
+  },
+  {
+    "_id": "6890de8e20592b0cdcdf2e03",
+    "type": "bedrock",
+    "protocol": 671,
+    "name": "1.20.80",
+    "__v": 0
+  },
+  {
+    "_id": "6890de8e20592b0cdcdf2e04",
+    "type": "bedrock",
+    "protocol": 685,
+    "name": "1.21.0",
+    "__v": 0
+  },
+  {
+    "_id": "6890de8e20592b0cdcdf2e05",
+    "type": "bedrock",
+    "protocol": 686,
+    "name": "1.21.2",
+    "__v": 0
+  },
+  {
+    "_id": "6890de8e20592b0cdcdf2e06",
+    "type": "bedrock",
+    "protocol": 712,
+    "name": "1.21.20",
+    "__v": 0
+  },
+  {
+    "_id": "6890de8e20592b0cdcdf2e07",
+    "type": "bedrock",
+    "protocol": 729,
+    "name": "1.21.30",
+    "__v": 0
+  },
+  {
+    "_id": "6890de8e20592b0cdcdf2e08",
+    "type": "bedrock",
+    "protocol": 748,
+    "name": "1.21.42",
+    "__v": 0
+  },
+  {
+    "_id": "6890de8e20592b0cdcdf2e0a",
+    "type": "bedrock",
+    "protocol": 776,
+    "name": "1.21.60",
+    "__v": 0
+  },
+  {
+    "_id": "6890de8e20592b0cdcdf2e0b",
+    "type": "bedrock",
+    "protocol": 786,
+    "name": "1.21.70",
+    "__v": 0
+  },
+  {
+    "_id": "6890de8e20592b0cdcdf2e0c",
+    "type": "bedrock",
+    "protocol": 800,
+    "name": "1.21.80",
+    "__v": 0
+  },
+  {
+    "_id": "6890de8e20592b0cdcdf2e0d",
+    "type": "bedrock",
+    "protocol": 818,
+    "name": "1.21.90",
+    "__v": 0
+  },
+  {
+    "_id": "6890e65120592b0cdcdf2f6d",
+    "type": "bedrock",
+    "protocol": 820,
+    "name": "1.21.93",
+    "__v": 0
+  },
+  {
+    "_id": "6890e9a0cb3530f819604085",
+    "type": "bedrock",
+    "protocol": 819,
+    "name": "1.21.93",
+    "__v": 0
+  },
+  {
+    "_id": "6893fbaa2497076cbf46ceb1",
+    "type": "bedrock",
+    "protocol": 827,
+    "name": "1.21.100",
+    "__v": 0
+  }
+]
