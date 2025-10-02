@@ -1,0 +1,20 @@
+{
+  "name": "temp-bot",
+  "version": "1.0.0",
+  "description": "Temporary Node.js bot for testing",
+  "main": "index.js",
+  "scripts": {
+    "start": "node index.js"
+  },
+  "dependencies": {
+    "telegraf": "4.16.3",
+    "pidusage": "4.0.1",
+    "bedrock-protocol": "3.48.1",
+    "minecraft-server-util": "5.4.4",
+    "i18next": "25.5.2",
+    "i18next-fs-backend": "2.6.0"
+  },
+  "engines": {
+    "node": ">=20"
+  }
+}
