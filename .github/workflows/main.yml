@@ -1,0 +1,24 @@
+name: Run Node Bot Temporarily
+
+on:
+  workflow_dispatch:
+
+jobs:
+  run-bot:
+    runs-on: ubuntu-latest
+    timeout-minutes: 360  # حوالي 6 ساعات
+    steps:
+      - uses: actions/checkout@v3
+
+      - name: Setup Node.js
+        uses: actions/setup-node@v3
+        with:
+          node-version: 20
+
+      - name: Install dependencies
+        run: npm install
+
+      - name: Run Bot
+        run: node index.js
+        env:
+          TOKEN: ${{ secrets.TOKEN }}  # استدعاء التوكن من GitHub Secrets
